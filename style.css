@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital@1&family=Protest+Revolution&display=swap");
+
+:root {
+  --yellow: #fed136;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.grey-text {
+  font-family: "Philosopher", sans-serif;
+  font-size: 17px;
+  color: gray;
+  line-height: 1.7;
+  padding-bottom: 10px;
+}
+.grey-bg {
+  background-color: rgb(235, 236, 237);
+}
+.h2-size {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+.h3-size {
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.text-center {
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 30px 0;
+}
+.logo a {
+  color: var(--yellow);
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.topics {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.topics a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.topics a:hover {
+  color: var(--yellow);
+  transition: 0.3s;
+}
+header {
+  background-image: url("https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-content p {
+  font-family: "Philosopher", sans-serif;
+  font-size: 40px;
+  color: aliceblue;
+}
+.header-content h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: aliceblue;
+  margin: 20px 0 50px 0;
+}
+.header-content a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: aliceblue;
+  background-color: var(--yellow);
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.first-section {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.first-section-topic {
+  margin-bottom: 60px;
+}
+
+.flex {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.card1 {
+  width: 30%;
+}
+.card1 h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.icon {
+  font-size: 70px;
+  color: white;
+  position: relative;
+}
+.card1-bg {
+  position: absolute;
+  margin: auto;
+  width: 135px;
+  height: 140px;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--yellow);
+  z-index: -10;
+  box-shadow: 5px 5px 8px lightgray;
+}
+.second-section {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.flex-2 {
+  padding-left: 15%;
+  padding-right: 15%;
+  list-style: none;
+}
+.first-group,
+.second-group {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.card2 {
+  width: 32%;
+  background-color: white;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 5px 10px 8px lightgray;
+}
+.image {
+  background-color: #fed136;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.card2:hover .image {
+  opacity: 1;
+}
+.card2:hover img {
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.third-section {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.profil-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.profil-cards .card {
+  width: 30%;
+}
+.profil-cards .card img {
+  width: 250px;
+  border: 5px solid lightgray;
+  border-radius: 50%;
+}
+.profil-cards .card .icons {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.profil-cards .card i {
+  color: black;
+  font-size: 40px;
+}
+footer {
+  background-image: url("https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg");
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+.footer-info h2 {
+  color: white;
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+.first-column {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.first-column input {
+  height: 40px;
+  margin-bottom: 20px;
+}
+input::placeholder {
+  color: lightgray;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.second-colunm {
+  width: 45%;
+}
+textarea {
+  width: 100%;
+}
+textarea::placeholder {
+  color: lightgray;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.button {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: aliceblue;
+  background-color: var(--yellow);
+  padding: 20px 30px;
+  border-radius: 5px;
+}
